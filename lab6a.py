@@ -8,7 +8,14 @@
 
 # TO DO 1: Complete the functions below.
 
+
 def buildtheSet(divisor):
+
+    result = set()
+    for num in range(0, 101):
+        if num % divisor == 0:
+            result.add(num)
+    return result
     # Complete this function
 def main():
 
