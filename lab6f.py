@@ -1,11 +1,27 @@
 # Add comments before you do anything else.
 
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Sepehr Sabzevari
+# Date: 2026-11-06
 # Purpose: Use Dictionary for Problem solving.
-# Usage: ./lab5f.py
+# Usage: ./lab6f.py
 
-# TO DO 1: Create function histogram() as instructed in readme.md file. 
-# TO DO 2: Create main() function and call histogram(). Call the main() function.
-# TO DO 3: Run the script. Take screenshot of code showing the functions histogram() and main(). Also show output in the screenshot.
+def histogram(text):
+   
+    counts = {}
+    for char in text:
+        if char == " ":         
+            continue
+        if char in counts:
+            counts[char] += 1
+        else:
+            counts[char] = 1
+
+   
+    for letter, count in counts.items():
+        print(letter, "*" * count)
+
+def main():
+    histogram("hello amma")
+
+main()
