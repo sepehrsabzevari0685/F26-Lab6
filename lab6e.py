@@ -7,6 +7,5 @@
 
 my_dict = {"switzerland" : "Alps", "United States" : "Alska Range", "Armenia" : "Caucasus", "Argentina" : "Andes", "Karakoram" : "Pakistan"}
 
-# items() gives back each (key, value) pair, which we unpack into two variables
 for key, value in my_dict.items():
     print(f"{key} : {value}")
